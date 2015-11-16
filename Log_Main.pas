@@ -15,11 +15,11 @@ type
     ListView1: TListView;
     DataSource1: TDataSource;
     DBGrid1: TDBGrid;
-    procedure FormCreate(Sender: TObject);
     procedure PageControl1Change(Sender: TObject);
+     procedure FormClick(Sender: TObject);
   private
     { Private declarations }
-    var
+     var
       Alert_Thread : TThread;
   public
     { Public declarations }
@@ -39,6 +39,14 @@ type
 
 
 
+
+{ TForm1 }
+
+procedure TForm1.FormClick(Sender: TObject);
+begin
+ ShowMessage('aaa');
+end;
+
 procedure TForm1.PageControl1Change(Sender: TObject);
 begin
   if PageControl1.ActivePage = TabSheet2 then
@@ -52,6 +60,8 @@ begin
     end;
   end;
 end;
+
+
 
 { Alert_Thread }
 
