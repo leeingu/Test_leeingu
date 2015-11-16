@@ -48,7 +48,7 @@ begin
         resume;
       end;
     finally
-      //Search_Thread.Free;
+
     end;
   end
   else if StartBtn.BorderStyle = bsSingle then
@@ -62,7 +62,7 @@ procedure TDBIsamMain.TreeView1Click(Sender: TObject);
 begin
   if TreeView1.Selected <> Nil then
   begin
-
+    ShowMessage('Test');
   end;
 end;
 
