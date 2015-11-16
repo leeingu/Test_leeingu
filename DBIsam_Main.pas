@@ -19,6 +19,7 @@ type
     procedure StartBtnClick(Sender: TObject);
     procedure TreeView1Click(Sender: TObject);
     procedure StartBtnExit(Sender: TObject);
+    procedure StartBtnDblClick(Sender: TObject);
   private
     { Private declarations }
     var
@@ -57,6 +58,11 @@ begin
     StartBtn.BorderStyle := bsNone;
   end;
 
+end;
+
+procedure TDBIsamMain.StartBtnDblClick(Sender: TObject);
+begin
+  showmessage('ss');
 end;
 
 procedure TDBIsamMain.StartBtnExit(Sender: TObject);
