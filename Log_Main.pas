@@ -18,6 +18,7 @@ type
     procedure FormCreate(Sender: TObject);
     procedure PageControl1Change(Sender: TObject);
     procedure FormClick(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private
     { Private declarations }
     var
@@ -38,6 +39,11 @@ type
   end;
 
 procedure TForm1.FormClick(Sender: TObject);
+begin
+  ShowMessage('aaa');
+end;
+
+procedure TForm1.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   ShowMessage('aaa');
 end;
