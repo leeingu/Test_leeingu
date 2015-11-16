@@ -18,12 +18,14 @@ type
     ListView1: TListView;
     procedure StartBtnClick(Sender: TObject);
     procedure TreeView1Click(Sender: TObject);
+    procedure StartBtnEnter(Sender: TObject);
   private
     { Private declarations }
     var
       Search_Thread : TThread;
   public
-    { Public declarations }
+
+    procedure StartBtnMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);  { Public declarations }
   end;
 
 var
@@ -58,6 +60,11 @@ begin
 
 end;
 
+procedure TDBIsamMain.StartBtnEnter(Sender: TObject);
+begin
+   ShowMessage('Enter');
+end;
+
 procedure TDBIsamMain.TreeView1Click(Sender: TObject);
 begin
   if TreeView1.Selected <> Nil then
@@ -67,3 +74,9 @@ begin
 end;
 
 end.
+procedure TDBIsamMain.StartBtnMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
+begin
+
+end;
+
+
