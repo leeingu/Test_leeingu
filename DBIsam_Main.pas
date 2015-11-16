@@ -18,6 +18,7 @@ type
     ListView1: TListView;
     procedure StartBtnClick(Sender: TObject);
     procedure TreeView1Click(Sender: TObject);
+    procedure StartBtnExit(Sender: TObject);
   private
     { Private declarations }
     var
@@ -56,6 +57,11 @@ begin
     StartBtn.BorderStyle := bsNone;
   end;
 
+end;
+
+procedure TDBIsamMain.StartBtnExit(Sender: TObject);
+begin
+  showmessage('ss');
 end;
 
 procedure TDBIsamMain.TreeView1Click(Sender: TObject);
