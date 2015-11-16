@@ -17,6 +17,7 @@ type
     DBGrid1: TDBGrid;
     procedure FormCreate(Sender: TObject);
     procedure PageControl1Change(Sender: TObject);
+    procedure FormClick(Sender: TObject);
   private
     { Private declarations }
     var
@@ -35,6 +36,11 @@ type
   TAlert_Thread = class(TThread)
     procedure Execute; override;
   end;
+
+procedure TForm1.FormClick(Sender: TObject);
+begin
+  ShowMessage('aaa');
+end;
 
 procedure TForm1.FormCreate(Sender: TObject);
 begin

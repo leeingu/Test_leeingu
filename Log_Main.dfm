@@ -11,6 +11,7 @@ object Form1: TForm1
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnClick = FormClick
   OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
@@ -56,10 +57,6 @@ object Form1: TForm1
       object TabSheet2: TTabSheet
         Caption = 'Alert'
         ImageIndex = 1
-        ExplicitLeft = 0
-        ExplicitTop = 0
-        ExplicitWidth = 0
-        ExplicitHeight = 0
         object ListView1: TListView
           Left = 0
           Top = 0
