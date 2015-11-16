@@ -43,7 +43,7 @@ begin
       Search_Thread:= TSearchThread.Create;
       with TSearchThread(Search_Thread) do
       begin
-        Init_Dir('C:\Users\Unreal\Desktop11111');
+        Init_Dir('C:\Users\Unreal\Desktop');
         priority := tpNormal;
         resume;
       end;
