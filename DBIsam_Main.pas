@@ -62,7 +62,7 @@ procedure TDBIsamMain.TreeView1Click(Sender: TObject);
 begin
   if TreeView1.Selected <> Nil then
   begin
-
+    ShowMessage('Test');
   end;
 end;
 
