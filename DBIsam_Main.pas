@@ -18,14 +18,19 @@ type
     ListView1: TListView;
     procedure StartBtnClick(Sender: TObject);
     procedure TreeView1Click(Sender: TObject);
+<<<<<<< HEAD
     procedure StartBtnExit(Sender: TObject);
     procedure StartBtnDblClick(Sender: TObject);
+=======
+    procedure StartBtnEnter(Sender: TObject);
+>>>>>>> 실험
   private
     { Private declarations }
     var
       Search_Thread : TThread;
   public
-    { Public declarations }
+
+    procedure StartBtnMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);  { Public declarations }
   end;
 
 var
@@ -60,6 +65,7 @@ begin
 
 end;
 
+<<<<<<< HEAD
 procedure TDBIsamMain.StartBtnDblClick(Sender: TObject);
 begin
   showmessage('ss');
@@ -68,6 +74,11 @@ end;
 procedure TDBIsamMain.StartBtnExit(Sender: TObject);
 begin
   showmessage('ss');
+=======
+procedure TDBIsamMain.StartBtnEnter(Sender: TObject);
+begin
+   ShowMessage('Enter');
+>>>>>>> 실험
 end;
 
 procedure TDBIsamMain.TreeView1Click(Sender: TObject);
@@ -79,3 +90,9 @@ begin
 end;
 
 end.
+procedure TDBIsamMain.StartBtnMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
+begin
+
+end;
+
+
