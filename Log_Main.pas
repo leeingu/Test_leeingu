@@ -17,7 +17,6 @@ type
     DBGrid1: TDBGrid;
     procedure FormCreate(Sender: TObject);
     procedure PageControl1Change(Sender: TObject);
-    procedure FormClick(Sender: TObject);
   private
     { Private declarations }
     var
@@ -37,15 +36,7 @@ type
     procedure Execute; override;
   end;
 
-procedure TForm1.FormClick(Sender: TObject);
-begin
-  ShowMessage('aaa');
-end;
 
-procedure TForm1.FormClose(Sender: TObject; var Action: TCloseAction);
-begin
-  ShowMessage('aaa');
-end;
 
 
 procedure TForm1.PageControl1Change(Sender: TObject);
